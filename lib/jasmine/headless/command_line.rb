@@ -3,7 +3,7 @@ module Jasmine::Headless
     class << self
       def run!
         require 'coffee-script'
-        require 'rainbow'
+        require 'rainbow/ext/string'
 
         begin
           options = Options.from_command_line
