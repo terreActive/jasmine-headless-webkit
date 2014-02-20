@@ -12,7 +12,7 @@ module Jasmine::Headless::FileChecker
   end
 
   def alert_bad_format(file)
-    Jasmine::Headless.warn("[%s] %s: %s" % [ 'Skipping File'.color(:red), file.color(:yellow), "unsupported format".color(:white) ])
+    Jasmine::Headless.warn("[%s] %s: %s" % [ Rainbow('Skipping File').color(:red), Rainbow(file).color(:yellow), Rainbow("unsupported format").color(:white) ])
   end
 
   def alert_if_bad_format?(file)
